@@ -72,16 +72,16 @@
         </div>
     </div>
     <script>
-        const revel = document.getElementById('revel');
-        const secEsc = document.getElementById('hiddenSections')
+  const revel = document.getElementById('revel');
+  const hiddenSections = document.getElementById('hiddenSections');
 
-        revel.addEventListener('click', () => {
-            if (hiddenSections.style.display) === 'none') {
-            hiddenSections.style.display = 'flex';
-            } else {
-                hiddenSections.style.display = 'none';
-            }
-        });
-    </script>
+  revel.addEventListener('click', () => {
+    if (hiddenSections.style.display === 'none') {
+      hiddenSections.style.display = 'flex';
+    } else {
+      hiddenSections.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>

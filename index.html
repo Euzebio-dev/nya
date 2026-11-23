@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bo">
+        <div class="header">
+            <div class="t1">
+            <div class="h">TC</div></div>
+            <div class="t2">Inicio</div>
+            <div class="t3">Produto</div>
+            <div class="t4">Sobre</div>
+            <div class="t5">Contato</div>
+        </div>
+        <div class="d1">
+            <img src="https://cdn.awsli.com.br/2500x2500/1318/1318167/produto/364770907/k599-kns--2--qayyy687mt.png" alt="teclado redragon">
+        </div>
+        <div class="ver1">
+            <div class="d2">teclado sem fio</div>
+            <div class="d3">praticidade, conforto para estudar e trabalhar.</div>
+            <div class="d4">R$ 409,99</div>
+            <button type="button" id="revel" class="d5">tenho interesse</button>
+        </div>
+        <div id="hiddenSections" style="display: flex;">
+            <div class="c1">
+                <div class="f1">Caracteristicas do produto</div>
+                <div class="f2">
+                    <ul>
+                        <li>Conexão bluetooth</li>
+                        <li>Teclas silenciosas</li>
+                        <li>Formato compacto</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="f3">Sobre a loja</div>
+                <div class="f4">A Tech Conecta é uma loja ficticia de acess de informatica criada como projeto escolar.</div>
+            </div>
+            <div class="c3">
+                <div class="g1">Entre em contato</div>
+                <div class="g2">nome</div>
+                <div class="g3"><label for="nome"></label><input type="text" id="nome"></div>
+                <div class="g4">Email</div>
+                <div class="g5"><label for="Email"></label><input type="text" id="Email"></div>
+                <div class="g6">Produto</div>
+                <div class="g7"><label for="produto"></label>
+                <select id="produto" name="produto">
+                    <option value="opt1" selected>teclado sem fio</option>
+                </select></div>
+                <div class="g8">Quantidade</div>
+                <div class="g9"><label for="Quantidade"></label><input type="number" id="Quantidade" placeholder="1"></div>
+                <div class="g10">Mensagem</div>
+                <div class="g11"><label for="Mensagem"></label>
+                <textarea id="Mensagem" rows="4" cols="75" placeholder="escreva sua duvida sobre este produto"></textarea></div>
+                <div class="g12"><input type="checkbox" id="novidades" name="novidades">
+                <label for="novidades"></label></div>
+                <div class="g13">
+                    <div class="sasa">quero receber novidades</div>
+                </div>
+                <div class="inv"></div>
+                <div class="g14">enviar Mensagem</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="s1">
+                <div class="s2">Tech Conecta 2026</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const revel = document.getElementById('revel');
+        const secEsc = document.getElementById('secEsc')
+
+        revel.addEventListener('click', () => {
+            if hiddenSections.style.display === 'none') {
+            hiddenSections.style.display = 'flex';
+            } else {
+                hiddenSections.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

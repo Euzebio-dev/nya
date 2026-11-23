@@ -6,20 +6,24 @@ body {
     font-weight: 700;
 }
 
-button, input, textarea, select {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
 }
 
 .bo {
     width: 1024px;
     height: 1536px;
     background-color: #FDFDFD;
+    max-width: 100%;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
 }
+
+button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;}
 
 .header {
     width: 1004px;

@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
-    margin: 0px;
+    margin: 0;
     font-size: 24px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -14,6 +18,7 @@ body {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     margin: 0 auto;
     position: relative;
 }
@@ -21,8 +26,13 @@ body {
 button, input, textarea, select {
     font-family: inherit;
     font-size: inherit;
-    color: inherit;}
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
 
+/* Header */
 .header {
     width: 1004px;
     height: 103px;
@@ -50,30 +60,16 @@ button, input, textarea, select {
     font-size: 40px;
 }
 
-.t2 {
+.t2, .t3, .t4, .t5 {
     width: 92px;
     height: 39px;
     background-color: #FCDE56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.t3 {
-    width: 92px;
-    height: 39px;
-    background-color: #FCDE56;
-}
-
-.t4 {
-    width: 92px;
-    height: 39px;
-    background-color: #FCDE56;
-}
-
-.t5 {
-    width: 92px;
-    height: 39px;
-    background-color: #FCDE56;
-}
-
+/* Hero Section */
 .d1 {
     position: absolute;
     width: 377px;
@@ -86,7 +82,7 @@ button, input, textarea, select {
     overflow: hidden;
 }
 
-.d1 img{
+.d1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -109,29 +105,31 @@ button, input, textarea, select {
     height: 96px;
     background-color: #FDDE53;
     font-size: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 .d3 {
     width: 518px;
     height: 51px;
     background-color: #FDDE52;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-wrap-mode: wrap;
+    padding: 0 20px;
+    white-space: normal;
     font-size: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .d4 {
     width: 417px;
-    height: 39px;
+    height: 60px;
     background-color: #FDDE52;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     font-size: 40px;
     font-weight: 900;
-    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .d5 {
@@ -141,15 +139,25 @@ button, input, textarea, select {
     font-size: 37px;
     font-weight: 700;
     color: #FDFDFD;
+    cursor: pointer;
 }
 
+/* Hidden Sections Wrapper */
+#hiddenSections {
+    width: 100%;
+    height: calc(100% - 103px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
 
+/* Info Cards (.c1 and .c2) */
 .c1 {
     width: 465px;
     height: 253px;
     background-color: #DC3936;
     position: relative;
-    bottom: 108px;
+    bottom: 660px;
     left: 20px;
     display: flex;
     flex-direction: column;
@@ -163,7 +171,7 @@ button, input, textarea, select {
     height: 253px;
     background-color: #DC3936;
     position: relative;
-    bottom: 108px;
+    bottom: 660px;
     left: 51px;
     display: flex;
     flex-direction: column;
@@ -172,6 +180,51 @@ button, input, textarea, select {
     padding: 20px;
 }
 
+.f1 {
+    width: 413px;
+    height: 51px;
+    background-color: #27A451;
+    font-size: 25px;
+    font-weight: 900;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.f2 {
+    width: 414px;
+    height: 138px;
+    background-color: #FDDD52;
+    display: flex;
+    align-items: center;
+}
+
+.f2 ul {
+    font-size: 26px;
+    margin: 0;
+}
+
+.f3 {
+    width: 413px;
+    height: 51px;
+    background-color: #27A451;
+    padding-left: 20px;
+    font-size: 29px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f4 {
+    width: 414px;
+    height: 138px;
+    background-color: #FDDD52;
+    font-size: 28px;
+    padding: 10px 20px;
+}
+
+/* Contact Form (.c3) */
 .c3 {
     width: 973px;
     height: 553px;
@@ -184,59 +237,9 @@ button, input, textarea, select {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 25px;
-    padding-bottom: 0px;
-    row-gap: 15px;
+    padding: 25px 25px 0 25px;
     gap: 17px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 10px;
-    width: 1004px;
-    height: 69px;
-    background-color: #0657C5;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.f1 {
-    width: 413px;
-    height: 51px;
-    background-color: #27A451;
-    font-size: 25px;
-    font-weight: 900;
-    padding-left: 20px;
-}
-
-.f2 {
-    width: 414px;
-    height: 138px;
-    background-color: #FDDD52;
-}
-
-.f2 ul{
-    font-size: 26px;
-}
-
-.f3 {
-    width: 413px;
-    height: 51px;
-    background-color: #27A451;
-    padding-left: 20px;
-    font-size: 29px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.f4 {
-    width: 414px;
-    height: 138px;
-    background-color: #FDDD52;
-    font-size: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
+    row-gap: 15px;
 }
 
 .g1 {
@@ -248,24 +251,18 @@ button, input, textarea, select {
     text-align: center;
 }
 
-.g2 {
+.g2, .g6 {
     width: 165px;
     height: 31px;
     background-color: #27A452;
     font-size: 22px;
     padding-left: 20px;
     font-weight: 900;
+    display: flex;
+    align-items: center;
 }
 
-.g3 {
-    width: 258px;
-    height: 38px;
-    background-color: #FDDD51;
-    padding-left: 20x;
-    padding-right: 20px;
-}
-
-.g4 {
+.g4, .g8 {
     width: 165px;
     height: 31px;
     background-color: #27A452;
@@ -273,53 +270,28 @@ button, input, textarea, select {
     font-size: 22px;
     padding-left: 20px;
     font-weight: 900;
+    display: flex;
+    align-items: center;
 }
 
-.g5 {
+.g3, .g7 {
+    width: 258px;
+    height: 38px;
+    background-color: #FDDD51;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.g5, .g9 {
     position: relative;
     width: 258px;
     height: 38px;
     background-color: #FDDD51;
     left: 7px;
-    padding-left: 20x;
-    padding-right: 20px;
-}
-
-.g6 {
-    width: 165px;
-    height: 31px;
-    background-color: #27A452;
-    font-size: 22px;
-    padding-left: 20px;
-    font-weight: 900;
-}
-
-.g7 {
-    width: 258px;
-    height: 38px;
-    background-color: #FDDD51;
-    padding-left: 20x;
-    padding-right: 20px;
-}
-
-.g8 {
-    width: 165px;
-    height: 31px;
-    background-color: #27A452;
-    margin-left: 26px;
-    font-size: 22px;
-    padding-left: 20px;
-    font-weight: 900;
-}
-
-.g9 {
-    position: relative;
-    width: 258px;
-    height: 38px;
-    background-color: #FDDD51;
-    left: 7px;
-    padding-left: 20x;
-    padding-right: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 .g10 {
@@ -331,15 +303,18 @@ button, input, textarea, select {
     font-size: 22px;
     padding-left: 20px;
     font-weight: 900;
+    display: flex;
+    align-items: center;
 }
 
 .g11 {
     width: 926px;
     height: 119px;
     background-color: #FDDD52;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
+/* Transparent Checkbox (.g12) */
 .g12 {
     width: 30px;
     height: 29px;
@@ -352,7 +327,7 @@ button, input, textarea, select {
     justify-content: center;
 }
 
-.g12 input{
+.g12 input {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -360,20 +335,22 @@ button, input, textarea, select {
     -webkit-appearance: none;
     background-color: transparent;
     display: inline-grid;
+    place-content: center;
+    margin: 0;
 }
 
 .g12 input::after {
     content: "";
-    width: 5px;
-    height: 10px;
+    width: 6px;
+    height: 12px;
     border: solid #000000;
-    border-width: 0px 2px 2px 0px;
+    border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     margin-bottom: 2px;
     display: none;
 }
 
-.g12 input::checked::after {
+.g12 input:checked::after {
     display: block;
 }
 
@@ -384,15 +361,16 @@ button, input, textarea, select {
     font-size: 20px;
     padding-left: 20px;
     font-weight: 900;
+    display: flex;
     align-items: center;
 }
 
-.sasa{
+.sasa {
     position: relative;
-    bottom: 2px;
+    bottom: 1px;
 }
 
-.g19{
+.g19 {
     width: 451px;
     height: 6px;
     background-color: #17A954;
@@ -413,7 +391,44 @@ button, input, textarea, select {
     padding-left: 20px;
     color: #FDFDFD;
     font-weight: 600;
-    padding-top: px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Form Elements Inside Boxes */
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: gray;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 1004px;
+    height: 69px;
+    background-color: #0657C5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .s1 {
@@ -421,17 +436,14 @@ button, input, textarea, select {
     width: 193px;
     height: 34px;
     background-color: #FCDD55;
-    top: 10px;
+    top: 17px;
     display: flex;
     align-items: center;
-    position: relative;
-    top: 17px;
+    justify-content: center;
 }
 
 .s2 {
     font-size: 17px;
-    padding-left: 7px;
-    padding-right: 0px;
     font-weight: 900;
 }
 
@@ -439,28 +451,4 @@ button, input, textarea, select {
     width: 276px;
     height: 7px;
     background-color: #0A5ABC;
-}
-
-input, textarea, select {
-    background-color: transparent;
-    border: none;
-}
-
-input {
-    width: 259px;
-    height: 38px;
-}
-
-input, textarea {
-    font-size: 30px;
-}
-
-textarea {
-    color: gray;
-    position: relative;
-    bottom: 10px;
-}
-
-select {
-    font-weight: 700;
 }
